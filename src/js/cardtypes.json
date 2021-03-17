@@ -1,0 +1,23 @@
+[
+  {
+    "American Express": "34, 37",
+    "China T-Union": 31,
+    "China UnionPay": 62,
+    "Diners Club International": 36,
+    "Diners Club United States & Canada": 54,
+    "Discover Card": "6011, 622126 - 622925, 644, 645, 646, 647, 648, 649, 65",
+    "RuPay": "60, 6521, 6522",
+    "InterPayment": 636,
+    "InstaPayment": "637-639",
+    "JCB": "3528–3589",
+    "Maestro UK": "6759, 676770, 676774",
+    "Maestro": "5018, 5020, 5038, 5893, 6304, 6759, 6761, 6762, 6763",
+    "Dankort": 5019,
+    "MIR": "2200–2204",
+    "NPS Pridnestrovie": "6054740-6054744",
+    "Mastercard": "2221-2720, 51–55",
+    "Visa": 4,
+    "Visa Electron": "4026, 417500, 4508, 4844, 4913, 4917",
+    "UATP": 1
+  }
+]
