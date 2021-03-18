@@ -33,6 +33,7 @@ export default class Gui {
     const imgsArr = [...this.paysystem.children];
     const ind = imgsArr.findIndex((elem) => elem.src.includes(filename));
     imgsArr[ind].className = '';
+    this.cardNumber.value = '';
   }
 
   clear() {
