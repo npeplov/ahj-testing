@@ -14,12 +14,12 @@ export default class Logic {
 
   init() {
     this.gui.drawUI();
-    // this.fetchPaySystems();
+    this.fetchPaySystems();
 
     this.gui.form.addEventListener('submit', (e) => {
       this.gui.clear();
       this.checkNumber(e);
-      // this.identifyPaySystem(e);
+      this.identifyPaySystem(e);
     });
   }
 
@@ -40,17 +40,17 @@ export default class Logic {
     this.gui.showMessage(result.message);
   }
 
-  // identifyPaySystem(e) {
-  //   e.preventDefault();
-  //   const cardNumber = this.gui.getCardNumber();
-  //   const result = checkPaySystem(this.iin, cardNumber);
-  //   if (result) this.gui.showPaySystem(result);
-  // }
+  identifyPaySystem(e) {
+    e.preventDefault();
+    const cardNumber = this.gui.getCardNumber();
+    const result = checkPaySystem(Paysystems.list, cardNumber);
+    if (result) this.gui.showPaySystem(result);
+  }
 
-  // fetchPaySystems() {
-  //   const list = getPaysystemList(Paysystems.list);
-  //   this.gui.drawCardImages(list);
-  // }
+  fetchPaySystems() {
+    const list = getPaysystemList(Paysystems.list);
+    this.gui.drawCardImages(list);
+  }
 
   // async fetchPaySystems() {
   //   const response = await fetch('./assets/paysystems.json');
