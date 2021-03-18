@@ -42,7 +42,7 @@ h1 {
 
 .opacityimg {
   filter: grayscale(.95);
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .calc {
