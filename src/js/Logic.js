@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/no-extraneous-dependencies */
 import { checkCardLuhn, checkPaySystem, getPaysystemList } from './functions.js';
+import Paysystems from './paysystems.js';
 
-const regeneratorRuntime = require('regenerator-runtime');
+// const regeneratorRuntime = require('regenerator-runtime');
 
 export default class Logic {
   constructor(gui) {
@@ -46,10 +47,15 @@ export default class Logic {
     if (result) this.gui.showPaySystem(result);
   }
 
-  async fetchPaySystems() {
-    const response = await fetch('./assets/paysystems.json');
-    this.iin = await response.json();
-    const list = (getPaysystemList(this.iin));
+  fetchPaySystems() {
+    const list = getPaysystemList(Paysystems.list);
     this.gui.drawCardImages(list);
   }
+
+  // async fetchPaySystems() {
+  //   const response = await fetch('./assets/paysystems.json');
+  //   this.iin = await response.json();
+  //   const list = (getPaysystemList(this.iin));
+  //   this.gui.drawCardImages(list);
+  // }
 }
