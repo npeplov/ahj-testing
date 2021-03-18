@@ -11,14 +11,14 @@ export default class Gui {
     this.cardNumber.value = '';
   }
 
-  drawCardImages(list) {
-    list.forEach((elem) => {
-      const img = document.createElement('img');
-      img.src = `./assets/${elem.toLowerCase().replaceAll(' ', '')}.gif`;
-      img.className = 'opacityimg';
-      this.paysystem.appendChild(img);
-    });
-  }
+  // drawCardImages(list) {
+  //   list.forEach((elem) => {
+  //     const img = document.createElement('img');
+  //     img.src = `./assets/${elem.toLowerCase().replaceAll(' ', '')}.gif`;
+  //     img.className = 'opacityimg';
+  //     this.paysystem.appendChild(img);
+  //   });
+  // }
 
   getCardNumber() {
     return this.cardNumber.value.split(' ').join('');
@@ -28,12 +28,12 @@ export default class Gui {
     this.message.innerHTML = `${message}`;
   }
 
-  showPaySystem(name) {
-    const filename = `${name.toLowerCase().replaceAll(' ', '')}.gif`;
-    const imgsArr = [...this.paysystem.children];
-    const ind = imgsArr.findIndex((elem) => elem.src.includes(filename));
-    imgsArr[ind].className = '';
-  }
+  // showPaySystem(name) {
+  //   const filename = `${name.toLowerCase().replaceAll(' ', '')}.gif`;
+  //   const imgsArr = [...this.paysystem.children];
+  //   const ind = imgsArr.findIndex((elem) => elem.src.includes(filename));
+  //   imgsArr[ind].className = '';
+  // }
 
   clear() {
     this.message.innerHTML = '';

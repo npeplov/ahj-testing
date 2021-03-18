@@ -1,18 +1,16 @@
 {
   "name": "testing",
   "version": "1.0.0",
-  "description": "Unit & e2e tests",
+  "description": "Unit e2e tests",
   "main": "index.js",
   "author": "npeplov",
   "license": "MIT",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start": "webpack serve --config webpack.dev.js",
-    "lint": "eslint . --fix",
+    "lint": "eslint .",
     "test": "jest",
-    "coverage": "jest --coverage",
-    "e2e": "jest --testPathPattern=./e2e/",
-    "doc": "jsdoc -c jsdoc.conf.json"
+    "coverage": "jest --coverage"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.0",
@@ -31,7 +29,6 @@
     "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^1.3.9",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
-    "puppeteer": "^8.0.0",
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^5.1.1",
     "webpack": "^5.24.3",

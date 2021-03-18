@@ -7,7 +7,7 @@ Environment: https://npeplov.github.io/ahj-testing
 
 License: https://npeplov.github.io/ahj-testing/assets/license.txt
 
-*******************
+---
 
 1. Всё создание можно выполнить в виде одного Github-репозитория
 1. В README.md должен быть размещён бейджик сборки и ссылка на Github Pages
